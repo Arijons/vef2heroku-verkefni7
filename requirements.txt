@@ -1,3 +1,2 @@
 bottle
-sqlite3
-verkefni7_2
+v7_2
