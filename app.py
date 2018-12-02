@@ -1,7 +1,6 @@
 from bottle import run, route, get, post, request, template, response, redirect
 from  v7_2 import *
-import sqlite3
-from sqlite3 import Error
+
 
 from sys import argv
 
