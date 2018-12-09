@@ -32,6 +32,7 @@ def er_notandinn_til(u,p):
     return notandi_til
 
 def nafn(u):
+    n=""
     conn = create_connection()
     sql="Select * from `user_tafla`;"
 
@@ -41,7 +42,8 @@ def nafn(u):
     for r in rows:
         if r[0]==u:
             print (r[0], r[1])
-    return r[2]
+            n = r[2]
+    return n
         
 
 def passa_notendaupplysingar(u,p):
