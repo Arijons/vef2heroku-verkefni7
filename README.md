@@ -1,4 +1,6 @@
 # vef2heroku-verkefni7
+allt komið saman 
 
-á eftir að tengja myscl við heroku - þetta virkar a minni vel
+geri þetta so betur í lokaverk
+
 
