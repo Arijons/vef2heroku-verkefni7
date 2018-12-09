@@ -40,7 +40,8 @@ def do_login():
 
 
     if passa_notendaupplysingar(username,password):
-        response.set_cookie("logged", username, secret='some-secret-key')
+        name = name(u,p)
+        response.set_cookie("logged", name, secret='some-secret-key')
         return redirect("/restricted")
     else:
         return """
@@ -53,9 +54,9 @@ def do_login():
 
 @route('/restricted')
 def restricted_area():
-    username = request.get_cookie("logged", secret='some-secret-key')
-    if username:
-        return template("admin.tpl", name=username)
+    name = request.get_cookie("logged", secret='some-secret-key')
+    if name:
+        return template("admin.tpl", name)
     else:
         return redirect ("/ny_skra")
     
