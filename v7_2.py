@@ -31,7 +31,7 @@ def er_notandinn_til(u,p):
             notandi_til = True
     return notandi_til
 
-    def nafn(u):
+def nafn(u):
     conn = create_connection()
     sql="Select * from `user_tafla`;"
 
