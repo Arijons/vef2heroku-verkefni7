@@ -55,8 +55,8 @@ def do_login():
 def restricted_area():
     username = request.get_cookie("logged", secret='some-secret-key')
     if username:
-        nafn=nafn(username)
-        return template("admin.tpl", name=nafn)
+        n=nafn(username)
+        return template("admin.tpl", name=n)
     else:
         return redirect ("/ny_skra")
     
