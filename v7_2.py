@@ -1,13 +1,13 @@
 
 
 
-import mysql.connector
+import pymysql
 from mysql.connector import Error
 
 def create_connection():
 #mysql://b6b4e521ba80a5:faae03d5@eu-cdbr-west-02.cleardb.net/heroku_b22cba0b4af10fe?reconnect=true
     try:
-        conn = mysql.connector.connect(host='eu-cdbr-west-02.cleardb.net',
+        conn = pymysql.connect(host='eu-cdbr-west-02.cleardb.net',
                                        database='heroku_b22cba0b4af10fe',
                                        user='b6b4e521ba80a5',
                                        password='faae03d5')
