@@ -31,7 +31,7 @@ def er_notandinn_til(u,p):
             notandi_til = True
     return notandi_til
 
-    def nafn(u,p):
+    def nafn(u):
     conn = create_connection()
     sql="Select * from `user_tafla`;"
 
@@ -39,7 +39,7 @@ def er_notandinn_til(u,p):
     c.execute(sql)
     rows = c.fetchall()
     for r in rows:
-        if r[0]==u or r[1]==p:
+        if r[0]==u:
             print (r[0], r[1])
     return r[2]
         
